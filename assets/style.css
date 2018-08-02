@@ -1,0 +1,56 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+html {
+  font-size: 16px;
+}
+
+#dir {
+  display: block;
+}
+
+#wrapper {
+  max-width: 100vw;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: auto auto auto;
+  background-color: #212121;
+  padding: 10px;
+  /* flex-direction: column;
+  align-items: center; */
+}
+
+.d-imgbox {
+  max-height: 25rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.d-imgbox button {
+  position: absolute;
+  right: 0;
+  background-color: rgba(250, 250, 250, 0.314);
+  border-radius: 1rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.d-imgbox button img {
+  width: 100%;
+  height: 100%;
+}
+
+.d-imgbox button:hover {
+  background-color: rgba(250, 250, 250, 0.733);
+}
+
+.d-image {
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
